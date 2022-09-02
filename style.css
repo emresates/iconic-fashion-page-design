@@ -1,0 +1,434 @@
+/*************************/
+/* CLASSIC THINGS */
+/*************************/
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*************************/
+/* NAVBAR */
+/*************************/
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.button-sub {
+    margin-left: -300px;
+}
+
+.button-sub button {
+    width: 175px;
+    height: 40px;
+    font-size: 20px;
+    background-color: transparent;
+    transition: .3s;
+}
+
+.button-sub button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+nav a.title {
+    font-size: 70px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+nav a.menu {
+    font-size: 40px;
+    margin-right: -250px;
+    font-weight: 600;
+}
+
+.title-down {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.title-down p {
+    font-size: 30px;
+}
+
+/*************************/
+/* FIRST SECTION START */
+/*************************/
+
+
+.opening,
+.closing {
+    display: flex;
+    width: 90%;
+    height: 100vh;
+    justify-content: space-between;
+    position: relative;
+    margin: 10px auto;
+    background-color: #000;
+    color: rgb(255, 255, 255);
+}
+
+.opening img {
+    display: block;
+    width: 50%;
+    max-height: 100%;
+}
+
+div.right {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    font: normal normal bold 55px/68px syne, sans-serif
+}
+
+div.right div:nth-child(1) {
+    width: 100%;
+    height: 20%;
+    font-size: 35px;
+    margin-top: -200px;
+    font-weight: 300;
+}
+
+div.right div:nth-child(2) {
+    margin: 20px auto;
+    width: 60%;
+    height: 20%;
+}
+
+div.right div:nth-child(2) div.date {
+    font-size: 15px;
+    margin-bottom: -0px;
+    margin-top: 0px;
+    cursor: default;
+}
+
+div.right div:nth-child(2) div.inside {
+    width: 90%;
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 20px;
+    transition: .3s;
+}
+
+div.right div:nth-child(2) div.inside:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/*************************/
+/* FIRST SECTION END */
+/*************************/
+
+
+/*************************/
+/* GALERY START */
+/*************************/
+
+h3.latest {
+    margin-left: 50px;
+    font-size: 25px;
+    padding: 40px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #000;
+}
+
+.galery {
+    display: flex;
+    width: 100%;
+    height: 800px;
+    padding: 10px;
+    /* background-color: aqua; */
+}
+
+.galery-item {
+    display: block;
+    width: 25%;
+    height: 500px;
+    /* background-color: beige; */
+    padding: 20px 20px;
+}
+
+.galery-item img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    cursor: pointer;
+}
+
+.galery-item .lower-date {
+    padding: 20px 0px;
+    margin-top: 5px;
+    font-weight: 300;
+}
+
+.galery-item .lower-content {
+    width: 85%;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.galery-item .lower-content:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/*************************/
+/* GALERY END */
+/*************************/
+
+/*************************/
+/* STORY OF THE WEEK - SECTION START */
+/*************************/
+
+
+section {
+    width: 100%;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+}
+
+section img {
+    width: 100%;
+    height: 800px;
+    position: absolute;
+
+}
+
+section h2,
+section h3,
+section h1 {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+section h2 {
+    padding: 150px;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+section h1 {
+    width: 60%;
+    font-size: 70px;
+    margin: auto;
+    font-weight: 600;
+    transition: .3s;
+}
+
+section h1:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.section-date {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+/*************************/
+/* SECTION END */
+/*************************/
+
+/*************************/
+/* CARD START */
+/*************************/
+
+
+.card-galery {
+    margin: auto;
+    display: flex;
+    width: 98%;
+    height: 100vh;
+}
+
+.card {
+    width: 35%;
+    padding: 0 20px;
+}
+
+.card img {
+    width: 100%;
+    max-height: 80%;
+    display: block;
+}
+
+.card-lower {
+    padding: 20px 0px;
+    width: 100%;
+    height: 300px;
+}
+
+.card-lower .lower-date,
+.card-lower h1,
+.card-lower p {
+    padding: 10px 0;
+}
+
+.card-lower p {
+    font-size: 20px;
+}
+
+.card-lower p:hover,
+.card-lower h1:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.card-lower .lower-date {
+    cursor: default;
+}
+
+/*************************/
+/* CARD END */
+/*************************/
+
+/*************************/
+/* CLOSING START */
+/*************************/
+
+
+.closing .left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 30%;
+    justify-content: center;
+    text-align: center;
+    margin: 10px auto;
+    font: normal normal bold 55px/68px syne, sans-serif;
+    letter-spacing: 5px;
+}
+
+.closing img {
+    width: 50%;
+}
+
+.closing .email {
+    width: 500px;
+    height: 40px;
+}
+
+.closing .email input {
+    margin-top: 100px;
+    background-color: transparent;
+    border: 5px solid red;
+    width: 500px;
+    height: 40px;
+    font-size: 20px;
+    color: #fff;
+}
+
+input:focus,
+textarea:focus {
+    outline: 0;
+    border: transparent;
+    border-bottom: 5px solid white;
+}
+
+.closing .left .email h3 {
+    position: absolute;
+    margin-top: 57px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffffff;
+    pointer-events: none;
+    letter-spacing: 0;
+}
+
+.closing .left .email button {
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 140px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: .3s;
+    border: none;
+}
+
+.closing .left .email button:hover {
+    color: red;
+}
+
+/*************************/
+/* CLOSING END */
+/*************************/
+
+/*************************/
+/* FOOTER START */
+/*************************/
+
+
+footer {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: #000;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer p {
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+footer a {
+    color: #fff;
+    font-size: 90px;
+    text-align: center;
+    margin-left: -200px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+footer ion-icon {
+    width: 50px;
+    height: 50px;
+    padding: 0px 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+footer ion-icon:hover,
+footer a:hover {
+    color: red;
+}
+
+/*************************/
+/* FOOTER END */
+/*************************/
